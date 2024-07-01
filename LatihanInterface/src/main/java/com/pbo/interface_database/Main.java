@@ -14,6 +14,7 @@ package com.pbo.interface_database;
 public class Main {
 
     public static void main(String[] args) {
+//        System.out.println("======== program mulai =======");
         // Contoh penggunaan MemoryStorage
         DataStorege memoryStorage = new MemoryStorage();
         memoryStorage.writeData("Data stored in memory");
@@ -27,5 +28,6 @@ public class Main {
         DataStorege databaseStorage = new DatabaseStorage("database.db");
         databaseStorage.writeData("Data stored in database");
         System.out.println("Database storage: " + databaseStorage.readData());
+//        System.out.println("======== program selesai =======");
     }
 }
